@@ -1,2 +1,2 @@
 
-Crea un grupo de usuarios que son los responsables de confirmar las ordenes de venta
+Crea un grupo de usuarios que son los responsables de confirmar los pedidos de venta
