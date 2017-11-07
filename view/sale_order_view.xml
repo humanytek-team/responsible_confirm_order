@@ -6,18 +6,11 @@
         <field name="model">sale.order</field>
         <field name="inherit_id" ref="sale.view_order_form"/>
         <field name="arch" type="xml">
-            <!--<xpath expr="//button[@name='action_confirm']" position="attributes">
-                <attribute name="groups">"responsible_confirm_order.group_confirm_order"</attribute>
-            </xpath>-->
-            <xpath expr="//button[@class='btn-primary o_sale_confirm']" position="replace">
-                <button name="action_confirm" states="sent" string="Confirm Sale" class="btn-primary o_sale_confirm" type="object" groups="responsible_confirm_order.group_confirm_order"/>
+            <xpath expr="//button[@name='action_confirm']" position="attributes">
+                <attribute name="groups">responsible_confirm_order.group_confirm_order</attribute>
             </xpath>
-
-            <!--<xpath expr="//button[@class='o_sale_confirm']" position="attributes">
-                <attribute name="groups">"responsible_confirm_order.group_confirm_order"</attribute>
-            </xpath>-->
-            <xpath expr="//button[@class='o_sale_confirm']" position="replace">
-                <button name="action_confirm" states="draft" string="Confirm Sale" class="o_sale_confirm" type="object" groups="responsible_confirm_order.group_confirm_order"/>
+            <xpath expr="//button[@class='o_sale_confirm']" position="attributes">
+                <attribute name="groups">responsible_confirm_order.group_confirm_order</attribute>
             </xpath>
         </field>
     </record>
